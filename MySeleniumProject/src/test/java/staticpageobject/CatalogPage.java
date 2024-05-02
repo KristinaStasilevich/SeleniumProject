@@ -27,12 +27,16 @@ public class CatalogPage {
         return driver.findElement(Locators.getLocator("CatalogPage.greenDuckLargeImage")).isDisplayed();
     }
 
-    public static void scrollImagesToRight(WebDriver driver) {
+    public static void scrollImagesToRight(WebDriver driver, String expectedColorOfDuck) {
         driver.findElement(Locators.getLocator("CatalogPage.rightSideOfImage")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.textToBe(Locators.getLocator("CatalogPage.colorOfDuck"), expectedColorOfDuck));
     }
 
-    public static void scrollImagesToLeft(WebDriver driver) {
+    public static void scrollImagesToLeft(WebDriver driver, String expectedColorOfDuck) {
         driver.findElement(Locators.getLocator("CatalogPage.leftSideOfImage")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.textToBe(Locators.getLocator("CatalogPage.colorOfDuck"), expectedColorOfDuck));
     }
 
     public static void waitForTheTextChange(WebDriver driver, String expectedColorOfDuck) {
