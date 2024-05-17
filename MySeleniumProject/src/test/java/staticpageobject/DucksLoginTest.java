@@ -2,6 +2,8 @@ package staticpageobject;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import staticpageobject.pages.HomePage;
+import staticpageobject.pages.LoginPage;
 
 public class DucksLoginTest extends TestBase {
     public static final String LIGHT_PINK = "rgba(255, 204, 204, 1)";

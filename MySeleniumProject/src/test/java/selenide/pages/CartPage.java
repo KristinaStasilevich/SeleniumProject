@@ -1,6 +1,8 @@
-package selenide;
+package selenide.pages;
 
+import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.Keys;
+import selenide.Locators;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -8,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CartPage {
     public static void waitForExpectedIcoQuantity(String expectedValue) {
-        $(Locators.getLocator("CartPage.cartIcoQuantity")).shouldHave(text(expectedValue));
+        Selenide.$(Locators.getLocator("CartPage.cartIcoQuantity")).shouldHave(text(expectedValue));
     }
 
     public static void waitForUpdatedQuantity(String expectedOrderConfirmationQuantity) {

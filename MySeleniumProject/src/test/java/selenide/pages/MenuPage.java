@@ -1,11 +1,14 @@
-package selenide;
+package selenide.pages;
+
+import com.codeborne.selenide.Selenide;
+import selenide.Locators;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class MenuPage {
     public static void clickHomeButton() {
-        $(Locators.getLocator("MenuPage.homeButton")).click();
+        Selenide.$(Locators.getLocator("MenuPage.homeButton")).click();
     }
 
     public static void clickRubberDucksButton() {

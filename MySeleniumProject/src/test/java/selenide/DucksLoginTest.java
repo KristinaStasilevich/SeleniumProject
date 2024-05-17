@@ -1,6 +1,8 @@
 package selenide;
 
 import org.testng.annotations.Test;
+import selenide.pages.HomePage;
+import selenide.pages.LoginPage;
 
 public class DucksLoginTest extends TestBase {
     public static final String LIGHT_PINK = "rgba(255, 204, 204, 1)";

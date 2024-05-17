@@ -1,4 +1,7 @@
-package selenide;
+package selenide.pages;
+
+import com.codeborne.selenide.Selenide;
+import selenide.Locators;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -8,7 +11,7 @@ import static com.codeborne.selenide.Selenide.actions;
 public class CatalogPage {
 
     public static void chooseTheBlueDuckImage() {
-        $(Locators.getLocator("CatalogPage.blueDuckImage")).click();
+        Selenide.$(Locators.getLocator("CatalogPage.blueDuckImage")).click();
     }
 
     public static void clickToTheGreenDuckMagnifier() {

@@ -1,10 +1,11 @@
-package staticpageobject;
+package staticpageobject.pages;
 
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import staticpageobject.Locators;
 
 public class CatalogPage {
     public static String getPageName(WebDriver driver) {

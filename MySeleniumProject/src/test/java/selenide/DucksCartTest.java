@@ -1,6 +1,9 @@
 package selenide;
 
 import org.testng.annotations.Test;
+import selenide.pages.CartPage;
+import selenide.pages.CatalogPage;
+import selenide.pages.DucksDescriptionPage;
 
 public class DucksCartTest extends TestBase {
     @Test

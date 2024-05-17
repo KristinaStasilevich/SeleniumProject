@@ -2,6 +2,9 @@ package staticpageobject;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import staticpageobject.pages.CatalogPage;
+import staticpageobject.pages.HomePage;
+import staticpageobject.pages.MenuPage;
 
 public class DucksMenuTest extends TestBase {
     @Test

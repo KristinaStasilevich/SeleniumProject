@@ -1,6 +1,7 @@
-package staticpageobject;
+package staticpageobject.pages;
 
 import org.openqa.selenium.WebDriver;
+import staticpageobject.Locators;
 
 public class DucksDescriptionPage {
 

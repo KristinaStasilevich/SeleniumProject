@@ -3,6 +3,8 @@ package staticpageobject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import staticpageobject.pages.CatalogPage;
+import staticpageobject.pages.MenuPage;
 
 public class DucksCatalogTest extends TestBase {
     @Test

@@ -1,6 +1,9 @@
 package selenide;
 
 import org.testng.annotations.Test;
+import selenide.pages.CatalogPage;
+import selenide.pages.MenuPage;
+
 public class DucksCatalogTest extends TestBase {
     @Test
     public void DucksImageMagnifierTest() {

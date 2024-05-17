@@ -1,7 +1,8 @@
-package staticpageobject;
+package staticpageobject.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import staticpageobject.Locators;
 
 public class MenuPage {
     public static void clickHomeButton(WebDriver driver) {

@@ -1,6 +1,9 @@
 package selenide;
 
 import org.testng.annotations.Test;
+import selenide.pages.CatalogPage;
+import selenide.pages.HomePage;
+import selenide.pages.MenuPage;
 
 public class DucksMenuTest extends TestBase {
     @Test

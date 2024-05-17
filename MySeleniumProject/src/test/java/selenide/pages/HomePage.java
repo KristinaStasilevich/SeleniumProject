@@ -1,4 +1,7 @@
-package selenide;
+package selenide.pages;
+
+import com.codeborne.selenide.Selenide;
+import selenide.Locators;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
@@ -6,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class HomePage {
 
     public static void logout() {
-        $(Locators.getLocator("HomePage.logoutButton")).click();
+        Selenide.$(Locators.getLocator("HomePage.logoutButton")).click();
     }
 
     public static void validateErrorMessage(String expectedMessage, String bgColor) {
