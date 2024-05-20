@@ -3,6 +3,9 @@ package staticpageobject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import staticpageobject.pages.CartPage;
+import staticpageobject.pages.CatalogPage;
+import staticpageobject.pages.DucksDescriptionPage;
 
 public class DucksCartTest extends TestBase {
     @Test

@@ -3,6 +3,8 @@ package staticpageobject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import staticpageobject.pages.CatalogPage;
+import staticpageobject.pages.MenuPage;
 
 public class DucksCatalogTest extends TestBase {
     @Test
@@ -19,12 +21,9 @@ public class DucksCatalogTest extends TestBase {
 
         MenuPage.clickRubberDucksButton(driver);
         CatalogPage.clickToTheGreenDuckMagnifier(driver);
-        CatalogPage.scrollImagesToRight(driver);
-        CatalogPage.waitForTheTextChange(driver, "Red Duck");
-        CatalogPage.scrollImagesToRight(driver);
-        CatalogPage.waitForTheTextChange(driver, "Blue Duck");
-        CatalogPage.scrollImagesToLeft(driver);
-        CatalogPage.waitForTheTextChange(driver, "Red Duck");
+        CatalogPage.scrollImagesToRight(driver, "Red Duck");
+        CatalogPage.scrollImagesToRight(driver, "Blue Duck");
+        CatalogPage.scrollImagesToLeft(driver, "Red Duck");
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(CatalogPage.rightIcoIsVisible(driver), "Right icon is not visible");

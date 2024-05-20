@@ -1,6 +1,7 @@
-package staticpageobject;
+package staticpageobject.pages;
 
 import org.openqa.selenium.WebDriver;
+import staticpageobject.Locators;
 
 public class LoginPage {
     public static void attemptLogin(WebDriver driver, String email, String password) {
