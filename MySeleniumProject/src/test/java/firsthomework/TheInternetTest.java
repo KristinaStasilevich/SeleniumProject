@@ -1,9 +1,12 @@
+package firsthomework;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import java.time.Duration;
 import java.util.List;
 
@@ -11,8 +14,8 @@ public class TheInternetTest {
 
     @Test
     public void clickToLinkTest() {
-
         String expectedPageTitle = "Drag and Drop";
+
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
