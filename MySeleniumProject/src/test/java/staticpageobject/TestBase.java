@@ -28,7 +28,7 @@ public class TestBase {
     }
 
     @AfterMethod
-    protected void teardown(ITestResult testResult) {
+    protected void teardown() {
         this.driver.quit();
     }
 }
