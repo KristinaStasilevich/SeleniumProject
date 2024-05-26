@@ -20,7 +20,7 @@ public class DucksCartTest extends TestBase {
         CatalogPage.chooseTheBlueDuckImage();
         DucksDescriptionPage.AddItemToCart();
         CartPage.waitForExpectedIcoQuantity( "1");
-        CartPage.validateQuantityInBasket("2");
+        CartPage.validateQuantityInBasket("1");
     }
 
     @Description("After clicking the remove button there are no items in the cart")
