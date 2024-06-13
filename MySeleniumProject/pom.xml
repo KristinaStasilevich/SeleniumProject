@@ -15,6 +15,7 @@
         <selenium.version>4.16.1</selenium.version>
         <aspectj.version>1.9.22</aspectj.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
