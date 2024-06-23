@@ -24,6 +24,7 @@ public class TestBase {
         Platform platform = Platform.valueOf(System.getProperty("os", "windows"));
 
         DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("acceptInsecureCerts", true);
 
         switch(browser) {
             case chrome -> caps.setBrowserName(CHROME);
