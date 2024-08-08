@@ -28,7 +28,7 @@ public class TestBase {
 
         switch(browser) {
             case chrome -> caps.setBrowserName(CHROME);
-            case MicrosoftEdge -> caps.setBrowserName(EDGE);
+            case edge -> caps.setBrowserName(EDGE);
             case firefox -> caps.setBrowserName(FIREFOX);
         }
 

@@ -2,6 +2,6 @@ package staticpageobject;
 
 public enum Browser {
     chrome,
-    MicrosoftEdge,
+    edge,
     firefox
 }
