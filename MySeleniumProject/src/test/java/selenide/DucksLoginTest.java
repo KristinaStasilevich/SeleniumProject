@@ -11,8 +11,8 @@ import selenide.pages.LoginPage;
 @Listeners({ScreenshotListener.class})
 @Feature("Authorization")
 public class DucksLoginTest extends TestBase {
-    public static final String LIGHT_PINK = "rgba(255, 204, 204, 1)";
-    public static final String LIGHT_GREEN = "rgba(214, 236, 166, 1)";
+    public static final String LIGHT_PINK = "rgba(255, 204, 204)";
+    public static final String LIGHT_GREEN = "rgba(214, 236, 166)";
 
     @Description("Successful authorization when entering correct credentials")
     @Story("Successful authorization")
